@@ -1,8 +1,8 @@
 # Notes Management System
 A full-stack Notes Management application built with React, Firebase Authentication, Express.js, and MongoDB Atlas.
-
+## Screenshots
+![Dashboard](./frontend/notes-ui/public/sreenshot/Dash.png)
 ## Features
-
 - Firebase Authentication
 - Google Login
 - Email OTP Login
@@ -105,7 +105,3 @@ Supported methods:
 - Email OTP Login
 
 Each user has private notes stored separately in MongoDB Atlas.
-
-
-## Screenshots
-![Dashboard](./frontend/notes-ui/public/screenshot/Dash.png)
