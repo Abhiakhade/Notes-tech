@@ -1,67 +1,111 @@
-# Trainee Developer Assignment
+# Notes Management System
+A full-stack Notes Management application built with React, Firebase Authentication, Express.js, and MongoDB Atlas.
 
-## Overview
+## Features
 
-This assignment has 3 parts:
-
-1. Core Task (Mandatory)
-2. Notes Backend (Optional)
-3. Notes Frontend (Optional)
-
-You must complete the Core Task.
-You can choose Backend, Frontend, or both.
-
----
-
-## 1. Core Task (Mandatory)
-
-Fix bugs in the provided code and make sure the project runs correctly.
+- Firebase Authentication
+- Google Login
+- Email OTP Login
+- Create, Read, Update, Delete Notes
+- Tags & Categories
+- Pin Notes
+- Search Notes
+- Auto-save
+- Responsive UI
+- Protected Routes
+- User-specific Notes Storage
 
 ---
 
-## 2. Backend Task (Optional)
+## Tech Stack
 
-Build a Notes API with following endpoints:
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- Axios
+- Firebase Authentication
 
-- POST /notes
-- GET /notes
-- GET /notes/:id
-- PUT /notes/:id
-- DELETE /notes/:id
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
 
----
+## Modules / Libraries Used
 
-## 3. Frontend Task (Optional)
+### Frontend
+- react
+- react-router-dom
+- axios
+- firebase
+- react-hot-toast
+- tailwindcss@3
+- postcss
+- autoprefixer
 
-Build a Notes UI:
+### Backend
+- express
+- mongoose
+- cors
+- dotenv
+- nodemon
 
-- Show list of notes
-- Create note
-- Edit note
-- Delete note
+## Installation
 
----
+### Frontend
 
-## Rules
+```bash
+npm install
+npm run dev
+```
 
-- You can use Google / ChatGPT
-- Do not copy full project from internet
-- Keep code simple and readable
+### Backend
 
----
+```bash
+npm install
+npm run dev
+```
 
-## Submission
+## Environment Variables
 
-- Push code to GitHub
-- Share repository link
+Create `.env` inside backend:
 
----
+```env
+PORT=5000
+MONGO_URI=your_mongodb_uri
+```
 
-## Evaluation Criteria
+## API Endpoints
 
-We evaluate:
-- Problem solving
-- Code quality
-- Understanding of basics
-- Effort and learning ability
+### POST `/api/notes`
+Create a note
 
+### GET `/api/notes`
+Get all user notes
+
+### GET `/api/notes/:id`
+Get single note
+
+### PUT `/api/notes/:id`
+Update note
+
+### DELETE `/api/notes/:id`
+Delete note
+
+### GET `/api/notes/search`
+Search notes
+
+## Authentication
+
+Authentication is implemented using Firebase Authentication.
+
+Supported methods:
+- Google Login
+- Email OTP Login
+
+Each user has private notes stored separately in MongoDB Atlas.
+
+
+## Screenshots
+![Dashboard](./frontend/notes-ui/public/screenshot/Dash.png)
